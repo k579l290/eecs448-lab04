@@ -24,12 +24,12 @@
 
     $total = ($desk * 600) + ($chair * 25) + ($lamp * 50) + $shipping_cost;
 
-    echo "<html><head><link rel="stylesheet" type="text/css" href="style.css"/></head>";
+    echo "<html><head><link rel="stylesheet" type="text/css" href="style.css"/></head></html>";
     echo "Welcome <br>";
     echo "Your username is: " . $username . "<br>";
     echo "Your password is: " . $password . "<br><br>";
   echo "Receipt <br>";
-  echo "<table>";
+  echo "<table id="r">";
     echo "<tr> <th>Quantity</th> <th>Cost Per Item</th> <th>Sub Total</th> </tr>";
     echo "<tr> <td>Desk</td> <td>" . $desk . "</td> <td>$600</td> <td>$" . ($desk * 600). "</td> </tr>";
     echo "<tr> <td>Chair</td> <td>" . $chair . "</td> <td>$25</td> <td>$" . ($chair * 25) . "</td> </tr>";
@@ -37,6 +37,5 @@
     echo "<tr> <td>Shipping</td> <td colspan = "2">" . $shipping . "</td> <td></td> <td>$" . $shipping_cost . "</td> </tr>";
     echo "<tr> <td colspan = "3">Total Cost</td> <td>$" . $total . "</td> </tr>";
 echo "</table>";
-echo "</html>";
 
 ?>
