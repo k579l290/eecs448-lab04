@@ -1,9 +1,7 @@
 <?php
-    
+
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-
-    echo "<html><head><link rel="stylesheet" type="text/css" href="style.css"/></head>";
 
     $desk = $_POST["desk"];
     $chair = $_POST["chair"];
@@ -12,7 +10,7 @@
 
     $username = $_POST["username"];
     $password = $_POST["password"];
- 
+
 
     if ($shipping == "7-day") {
         $shipping_cost = 0;
@@ -23,9 +21,9 @@
     if ($shipping == "Three-day") {
         $shipping_cost = 5;
     }
-    
+
     $total = ($desk * 600) + ($chair * 25) + ($lamp * 50) + $shipping_cost;
-    
+
     echo "<html><head><link rel="stylesheet" type="text/css" href="style.css"/></head>";
     echo "Welcome <br>";
     echo "Your username is: " . $username . "<br>";
