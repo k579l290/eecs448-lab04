@@ -1,0 +1,21 @@
+table, th, td
+{
+  border: 1px solid black;
+}
+
+body
+{
+	background-color: white;
+}
+
+th
+{
+    text-align: center;
+	background-color: lightgreen;
+}
+
+td
+{
+    text-align: left;
+	background-color: lavender;
+}

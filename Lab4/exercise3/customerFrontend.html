@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Web Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+      <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+  <body>
+        <h1>Web Store</h1>
+        <form id= "formSubmit" action="customerBackend.php" onsubmit="return check()" method= "post" >
+          Username: <input type="text" name="username" id="username"><br>
+          Password: <input type="password" name="password" id="password"><br><br>
+
+            <table>
+                <tr> <th>Products</th> <th>Price</th> <th>Quantity</th></tr>    
+                <tr> <td>Desk</td> <td>$600</td> <td><input type="number" name="desk" id="desk" min = 0> </td></tr>
+                <tr> <td>Chair</td> <td>$25</td> <td><input type="number" name="chair" id="chair" min = 0> </td></tr>
+                <tr> <td>Lamp</td> <td>$50</td> <td><input type="number" name="lamp" id="lamp" min = 0> </td></tr>
+            </table>
+
+            <h2>Please Choose Shipping Option:</h2>
+            <input type="radio" name="shipping" value="7-day">7 day (free)<br>
+            <input type="radio" name="shipping" value="Three-day">3 day ($5.00)<br>
+            <input type="radio" name="shipping" value="Overnight">Overnight ($50.00) <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
