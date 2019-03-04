@@ -20,12 +20,12 @@ function check() {
   let desk = document.getElementById("desk").value;
   let chair = document.getElementById("chair").value;
   let lamp = document.getElementById("lamp").value;
-  
+
     if (desk == "" || chair == "" || lamp == "") {
         alert("Quantities cannot be blank");
         return false;
     }
-    
+
     let shipping = document.getElementsByName("shipping");
     if (document.forms["formSubmit"]["shipping"].value == "") {
       alert("Must pick a shipping option");
@@ -33,7 +33,7 @@ function check() {
     }
 
   else {
-    document.getElementById("formSubmit").submit();
+    document.forms["formSubmit"].submit();
     return true;
   }
 }
